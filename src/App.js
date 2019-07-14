@@ -47,7 +47,7 @@ class App extends Component {
     this.setState({ loading: true });
 
     const res = await axiox.get(
-      `https://api.github.com/search/users/${username}?client_id=${
+      `https://api.github.com/users/${username}?client_id=${
         process.env.REACT_APP_GITHUB_CLIENT_ID
       }&clent_secret=${process.env.REACT_APP_GITHUB_CLIENT_SECRET}`
     );
